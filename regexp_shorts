@@ -67,3 +67,7 @@ Remove everything between {}:
 	Find: ((\{)(.*?)(\}))+(\n.*$)+?
 	Replace with: \1
 Note: You have to run above regex multiple times
+
+Remove curly brackets but keep inner content only:
+	Find: (\{)(.*)(\})
+	Replace with: \1
