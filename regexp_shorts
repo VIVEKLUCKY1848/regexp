@@ -63,3 +63,6 @@ Replace the path of static pages from Local to Live:
 	eg.	Find: ^\s*RewriteBase.*$
 	Replace with: RewriteBase /folder1/rootfolder/
 	
+Remove everything between {}:
+	Find: ((\{)(.*?)(\}))+(\n.*$)+?
+	Replace with: \1
