@@ -54,3 +54,12 @@ Replace multiple spaces with single space:
 Remove unnecessary line feeds:
 	Find: \r or \x0D
 	Replace with:
+
+
+Replace the path of static pages from Local to Live:
+	Find: ^\s*RewriteBase.*$ or ^\s*RewriteBase.*$
+	Replace with: RewriteBase <new_base_path>
+	
+	eg.	Find: ^\s*RewriteBase.*$
+	Replace with: RewriteBase /folder1/rootfolder/
+	
