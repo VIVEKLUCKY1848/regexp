@@ -66,3 +66,4 @@ Replace the path of static pages from Local to Live:
 Remove everything between {}:
 	Find: ((\{)(.*?)(\}))+(\n.*$)+?
 	Replace with: \1
+Note: You have to run above regex multiple times
