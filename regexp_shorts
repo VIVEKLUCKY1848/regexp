@@ -1,0 +1,56 @@
+Search modes regex only:
+
+Replace multiple white spaces with any character (eg. |):
+	Find: [ \t]{2,}
+	Replace with: "|" (without quotes)
+
+Remove everything after 2nd occurrence of character(eg. ,):
+	Find: (.*?,.*?),.* or Find: ([^,\n]+,[^,\n]+),.*
+	Replace with: \1
+
+Place quotes("") around numbers only:
+	Find: (\d+)
+	Replace with: "\1"
+
+Match only words that have spaces between them:
+	Find: ((\w+) (\w+))
+
+Match any word that may have spaces: 
+	Find: ^\w+( +\w+)*$
+	Find: (\D+( +\D+)*)
+	
+Place quotes around only words(may have spaces)
+	Find: ([a-zA-Z][a-zA-Z ]+)
+	Replace with: "\1"
+
+Replace newline with comma and linebreak:
+	Find: \n
+	Replace with: ,\n
+	
+Remove any html tag with it's contents(eg label):
+	Find "<label[^>]*>[\n\t\r]*|<\/label[^>]*>" or "<label.*?>(.|\s)*?</label>"
+	Replace with: ""
+	
+Comment any html tag with it's contents(eg label):
+	Find "(<label[^>]*>[\n\t\r]*|<\/label[^>]*>)" or "(<label.*?>(.|\s)*?</label>)"
+	Replace with: "<!--\1-->"
+	
+Replace multiple spaces with single space:
+	Find: [\r\n]{2,}
+	Replace with: \n
+
+Remove multiple blank lines or empty lines:
+	Find: ^\s*$ or ^[ \t]*$\r?\n or [\t ]+$ or ^$(empty/null lines) or ^\s+$
+	Replace with:
+		
+Remove multiple & trailing spaces (Using positive lookahead):
+	Find: ^ *|(?<= ) | *$
+	Replace with:
+		
+Replace multiple spaces with single space:
+	Find: \s\s+ or \s+(?=\s)
+	Replace with: \s
+
+Remove unnecessary line feeds:
+	Find: \r or \x0D
+	Replace with:
