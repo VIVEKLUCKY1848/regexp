@@ -71,6 +71,7 @@ Note: You have to run above regex multiple times
 Remove curly brackets but keep inner content only:
 	Find: (\{)(.*)(\})
 	Replace with: \1
+
 Replace the occurrence on only specific word:
 	Find: ([^a-z])(<word>)([^a-z])
 	Replace with: \1\2<additional text>\3
