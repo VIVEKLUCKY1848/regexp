@@ -79,3 +79,8 @@ example:
 	Find: ([^a-z])(Vikas)([^a-z])
 	Replace with: \1\2s\3
 Output: Vikass or _Vikass_
+
+Match any xml tag with CDATA:
+	Find: <\w+><!\[CDATA\[.*?\]\]></\w+>
+	example: <username><!\[CDATA\[.*?\]\]></username>
+	example: <password><!\[CDATA\[.*?\]\]></password>
