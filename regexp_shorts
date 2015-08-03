@@ -86,5 +86,5 @@ Match any xml tag with CDATA:
 	example: <password><!\[CDATA\[.*?\]\]></password>
 
 For indentation, find 4 spaces and replace it with tab:
-	Find: ^ {4}(\w)
+	Find: ^ {4}(\w) or ^[ {4}]+([^\s])
 	Replace with: \t\1
