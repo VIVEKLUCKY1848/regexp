@@ -88,3 +88,6 @@ Match any xml tag with CDATA:
 For indentation, find 4 spaces and replace it with tab:
 	Find: ^ {4}(\w) or ^[ {4}]+([^\s])
 	Replace with: \t\1
+
+Find any line not containing <word/character>:
+	Find: ^((?!<word/character>).)*$
