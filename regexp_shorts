@@ -84,3 +84,7 @@ Match any xml tag with CDATA:
 	Find: <\w+><!\[CDATA\[.*?\]\]></\w+>
 	example: <username><!\[CDATA\[.*?\]\]></username>
 	example: <password><!\[CDATA\[.*?\]\]></password>
+
+For indentation, find 4 spaces and replace it with tab:
+	Find: ^ {4}(\w)
+	Replace with:
