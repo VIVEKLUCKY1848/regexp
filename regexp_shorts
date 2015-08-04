@@ -92,3 +92,15 @@ For indentation, find 4 spaces and replace it with tab:
 Find any line not containing <word/character>:
 	Find: ^((?!<word/character>).)*$
 	example: ^((?!product-name).)*$
+
+Replace inside xml tags:
+	Find: "<<tagname>>[\s\S]*?<\/<tagname>>"
+	Replace with: <desired value>
+	
+Replace module name multiple files:
+	Find: (word)\b or (Word)\b or (word)_ or (Word)_
+	Replace with: \1s or \1s_
+
+Replace the occurrence on only specific word:
+	Find: ([^a-z])(<word>)([^a-z])
+	Replace with: \1\2<additional text>\3
