@@ -91,3 +91,4 @@ For indentation, find 4 spaces and replace it with tab:
 
 Find any line not containing <word/character>:
 	Find: ^((?!<word/character>).)*$
+	example: ^((?!product-name).)*$
