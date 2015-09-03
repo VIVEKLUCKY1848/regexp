@@ -104,3 +104,6 @@ Replace module name multiple files:
 Replace the occurrence on only specific word:
 	Find: ([^a-z])(<word>)([^a-z])
 	Replace with: \1\2<additional text>\3
+
+Email Validation PCRE Regex
+emailPattern = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/ EOL
