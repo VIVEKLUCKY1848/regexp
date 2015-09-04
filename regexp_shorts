@@ -107,3 +107,9 @@ Replace the occurrence on only specific word:
 
 Email Validation PCRE Regex
 emailPattern = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/ EOL
+
+regexlabelwithclass=(<label(?=[^>]*class="%cursor%")[^>]*>)
+regexalnumclass=[[:alnum:]]+( [[:alnum:]]+)*
+regexalnumclass2=(([[:alnum:]]+( [[:alnum:]]+)*)(,))
+regexalnumclasscommasep=([[:alnum:]]+( [[:alnum:]]+)*)(,)
+regexalnumclassfinal=([[:alnum:]]+ ?)*$
