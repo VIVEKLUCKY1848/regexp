@@ -131,3 +131,11 @@ POSIX	Description	ASCII	Unicode	Shorthand	Java
 [:upper:] 	Uppercase letters 	[A-Z] 	\p{Lu} 		\p{Upper}
 [:word:] 	Word characters (letters, numbers and underscores) 	[A-Za-z0-9_] 	[\p{L}\p{N}\p{Pc}] 	\w 	
 [:xdigit:] 	Hexadecimal digits 	[A-Fa-f0-9] 	[A-Fa-f0-9] 		\p{XDigit}
+
+JS Regex Patterns
+var org_name = new RegExp("^[A-z0-9 .'&-]+$");
+var non_numeric = new RegExp("^[A-z ]+$");
+var non_numeric_with_dot = new RegExp("^[A-z .]+$");
+var phone_number = new RegExp("^[0-9+() -]+$");
+var valid_email = new RegExp("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$");
+var non_empty = new RegExp("^(?!\s*$).+");
