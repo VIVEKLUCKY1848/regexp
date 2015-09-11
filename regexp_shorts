@@ -141,7 +141,7 @@ var valid_email = new RegExp("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
 var non_empty = new RegExp("^(?!\s*$).+");
 
 Remove everything before <substring> on same line only:
-	Find: ^.*(?=<substring>/)
+	Find: ^.*(?=<substring>/) or ^.*(?=test)
 	Replace with:
 example:
 	Find: ^.*(?=app/)
