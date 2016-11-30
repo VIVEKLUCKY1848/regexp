@@ -152,3 +152,4 @@ Wrap subtitle content around with <font> tag to apply color start
 	Or
 	Find: ^([^0-9^\n].*)
 	Replace with: <font color="#FFFF00">\1</font>
+Wrap subtitle content around with <font> tag to apply color finish...
