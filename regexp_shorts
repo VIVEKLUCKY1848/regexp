@@ -146,3 +146,9 @@ Remove everything before <substring> on same line only:
 example:
 	Find: ^.*(?=app/)
 	Replace with:
+
+Wrap subtitle content around with <font> tag to apply color start
+Find: ^([^\d^\n].*)
+Or
+Find: ^([^0-9^\n].*)
+Replace with: <font color="#FFFF00">\1</font>
