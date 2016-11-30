@@ -151,5 +151,9 @@ Wrap subtitle content around with <font> tag to apply color start
 	Find: ^([^\d^\n].*)
 	Or
 	Find: ^([^0-9^\n].*)
+	Or
+	Find: (\d+:\d+:[^-]+-->.*\R+\K[\s\S]+?(?=\s*(?:^\d+$|\z)))
+	Or
+	Find: ^((?!\d+$|\d{2}:\d{2}:\d{2},\d+ --> \d{2}:\d{2}:\d{2},\d+$).+)
 	Replace with: <font color="#FFFF00">\1</font>
 Wrap subtitle content around with <font> tag to apply color finish...
